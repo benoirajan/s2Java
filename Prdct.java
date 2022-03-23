@@ -42,3 +42,12 @@ class Product{
 		return "id: "+id+"\nname: "+name+",\nprice: "+price;
 	}
 }
+
+// Enter the product count: 3
+// Enter the Product id,price,name:
+// 1 100 A
+// 2 80 B
+// 3 300 C
+// Min: id: 2
+// name: B,
+// price: 80
