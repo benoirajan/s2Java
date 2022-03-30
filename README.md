@@ -1,1 +1,2 @@
-# s2Java
+# Java Lab
+## Semester 2
