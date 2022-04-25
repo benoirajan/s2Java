@@ -4,3 +4,4 @@ Semester 2
 - inheritance
   - single
   - multilevel
+- [Nested class](/Nested.java)
