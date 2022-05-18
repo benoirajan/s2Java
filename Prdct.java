@@ -2,10 +2,14 @@ import java.util.*;
 public class Prdct{
 	public static void main(String[] a){
 		Scanner s = new Scanner(System.in);
-		int n = 5;
+		System.out.print("Enter the product count: ");
+		int n = s.nextInt();
 		Product[] ps = new Product[n];
-		for(int i=0;i<n;i++)
+		System.out.print("Enter the Product id,price,name: ");
+		for(int i=0;i<n;i++){
 			ps[i]=new Product(s.nextInt(),s.nextInt(),s.next());
+		}
+			
 		Product m=Product.getMin();
 		if(m!=null)
 			System.out.println("Min: "+m);
@@ -15,6 +19,7 @@ public class Prdct{
 
 
 class Product{
+	public static int counter;
 	private int id,price;
 	public String name;
 	private static Product min;
@@ -22,9 +27,11 @@ class Product{
 		id=a;
 		price=b;
 		name=s;
-		if(min!=null && min.price>price)
+		if(min==null)
+			min=this;
+		else if(min.price>price)
 				min = this;
-		else min = this;
+		counter++;
 	}
 
 	public static Product getMin(){
@@ -32,6 +39,15 @@ class Product{
 	}
 
 	public String toString(){
-		return id+", name:"+name+", p:"+price;
+		return "id: "+id+"\nname: "+name+",\nprice: "+price;
 	}
 }
+
+// Enter the product count: 3
+// Enter the Product id,price,name:
+// 1 100 A
+// 2 80 B
+// 3 300 C
+// Min: id: 2
+// name: B,
+// price: 80
