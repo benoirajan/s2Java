@@ -3,6 +3,7 @@ public class Nested{
 		new Parent().new Child().display();
 		new Parent().print("HI");
 		new Parent().inFunCls();
+
 	}
 }
 
@@ -14,11 +15,8 @@ class Parent{
 		void display(){
 			print("This is Child function");
 		}
-	}
+}
 
-/**
- *It used for test class in a function 
- */
 	public void inFunCls(){
 		class InFunCls{
 			public void test(){
@@ -28,3 +26,4 @@ class Parent{
 		new InFunCls().test();
 	}
 }
+
