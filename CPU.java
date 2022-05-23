@@ -28,5 +28,5 @@ public class CPU{
 }
 
 // Processor: Intel, cores: 8
-// RAM: Acer, size: 8.000000
+// RAM: Acer, size: 8.000000GB
 // Total: 10000.000000Rs
