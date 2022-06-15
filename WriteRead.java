@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Exam{
+public class WriteRead{
 	public static void main(String[] args) {
 		System.out.print("Enter a String: ");
 		Scanner sc=new Scanner(System.in);
@@ -22,3 +22,7 @@ public class Exam{
 		} catch(Exception e){}
 	}
 }
+/*
+Enter a String: Welcom to Java - Tom
+Welcom to Java - Tom
+*/ 
