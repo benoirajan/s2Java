@@ -6,3 +6,5 @@ Semester 2
   - multilevel
 - [Nested class](/Nested.java)
 - CPU.java
+- Thread Tred.java
+- 
