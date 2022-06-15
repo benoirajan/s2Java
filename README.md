@@ -4,7 +4,6 @@ Semester 2
 - inheritance
   - single
   - multilevel
-- [Nested class](/Nested.java)
 - CPU.java
 - Thread Tred.java
-- 
+- [Package](/Package)
